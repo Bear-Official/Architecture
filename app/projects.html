@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Architecture</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    bigScreen: { max: "800000px" },
+
+                    veryLg: { max: "1738px" },
+
+                    xxxl: { max: "1700px" },
+
+                    largeScreen: { max: "1566px" },
+
+                    mediumScreen: { max: "1480px" },
+
+                    xxl: { max: "1400px" },
+
+                    xl: { max: "1300px" },
+
+                    xll: { max: "1070px" },
+
+                    laptop: { max: "992px" },
+
+                    lg: { max: "1023px" },
+
+                    largemd: { max: "780px" },
+
+                    md: { max: "767px" },
+
+                    tablet: { max: "742px" },
+
+                    sm: { max: "639px" },
+
+                    smDevice: { max: "375px" },
+
+                    maxSm: { max: "320px" },
+                },
+                fontFamily: {
+                    "Futura": ["Futura Cyrillic", "sans-serif"],
+                },
+
+                colors: {
+                    primary: "#FFFFFF",
+                    secondary: "#1C1C1C",
+                    third: "#B6D7E8",
+                    four: "#313131",
+                    c8: "#C8C7C7",
+                },
+            }
+        }
+    </script>
+</head>
+
+<body class="font-bold font-Future">
+    <header class="bg-primary w-full sm:pt-[2.4375rem] sm:pb-0 overflow-hidden largeScreen:bg-secondary">
+        <div class="wrapper">
+            <div class="flex h-24 largeScreen:justify-between">
+                <div
+                    class="bg-four w-[18.1875%] h-full flex items-center pl-14 laptop:w-auto laptop:bg-secondary laptop:p-0">
+                    <h1 class="text-2xl uppercase text-primary z-20 relative">EADAS</h1>
+                </div>
+                <nav
+                    class="text-[#999999] w-[29.9375%] h-full  bg-secondary flex items-center justify-center tablet:hidden burgerContent ">
+                    <ul
+                        class="flex items-center gap-8 tablet:absolute tablet:flex-col tablet:left-1/2 tablet:right-1/2 tablet:top-[30%]">
+                        <li><a class="hover:text-primary duration-500 laptop:after:content-none transition-all ease-in-out z-10  relative after:w-7 after:h-[.0938rem] after:bg-[#B6D7E8] after:block after:absolute after:top-3 after:-left-10"
+                                href="index.html">ГОЛОВНА</a>
+                        </li>
+                        <li><a class="hover:text-primary duration-500 transition-all ease-in-out text-[#C8C7C7] z-10  relative"
+                                href="projects.html">ПРОЕКТИ</a>
+                        </li>
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out z-10  relative"
+                                href="#">НАГОРОДИ</a>
+                        </li>
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out z-10  relative"
+                                href="contacts.html">КОНТАКТИ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div
+                    class="flex items-center gap-14 text-[.75rem] font-normal text-[#696969] uppercase h-full w-[35%] justify-center sm:hidden burgerContent largeScreen:hidden">
+                    <a href="#">TWITTER</a>
+                    <a href="#">FACEBOOK</a>
+                    <a href="#">instagram</a>
+                    <div class="flex flex-col text-[#696969]">
+                        <div class="flex mb-3 items-center">
+                            <img class="w-3 h-3 relative right-2" src="images/phone.png" alt="">
+                            <a class="text-sm" href="tel:+38 (097) 567 - 44 - 26">+38
+                                (097) 567 - 44 - 26</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-3 h-3 relative right-2 items-center" src="images/phone.png" alt="">
+                            <a class="text-sm" href="tel:+38 (097) 567 - 44 - 26">+38
+                                (097) 567 - 44 - 26</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="text-c8 text-[.6875rem] h-full w-[16.875%] bg-four items-center flex justify-center laptop:w-auto laptop:bg-secondary tablet:hidden burgerContent">
+                    <a class="uppercase z-10 relative hover:text-primary" href="#">
+                        Замовити консультацию
+                    </a>
+                </div>
+                <button class="space-y-2 hidden tablet:block burger">
+                    <span class="block w-8 rounded-sm h-1 bg-primary lines"></span>
+                    <span class="block w-8 rounded-sm h-1 bg-primary lines"></span>
+                    <span class="block w-8 rounded-sm h-1 bg-primary lines"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <section>
+            <div class="wrapper relative">
+                <div class="flex justify-between xll:flex-col">
+                    <div class="flex flex-col pt-16 xll:items-center text-center">
+                        <div class="flex items-center gap-3 font-light text-secondary lg:hidden">
+                            <span class="block border-b-2 border-b-third pb-1">
+                                ГОЛОВНА -
+                            </span>
+                            <span class="block border-b-2 border-b-third pb-1">
+                                ПРОЕКТИ
+                            </span>
+                            <span class="block text-[#A0A0A0]">- THE ROCK AND ROLL HALL</span>
+                        </div>
+                        <div class="mt-4 relative">
+                            <h2 class="font-normal text-7xl leading-[5.9375rem] uppercase sm:text-base">
+                                The rock and <br class="md:hidden"> roll hall</h2>
+                        </div>
+                        <div
+                            class="flex items-end gap-28 font-normal text-xs text-justify mt-8  xxl:flex-col xxl:gap-0 xxl:items-start  xll:items-center">
+                            <p class="text-secondary sm:text-sm">
+                                Дійсно, ніхто не відкидає, не зневажає, не уникає насолод <br class="sm:hidden"> тільки
+                                через те, що це
+                                насолоди,
+                                але лише через те, що тих, <br class="sm:hidden">
+                                хто не вміє розумно вдаватися насолоді, осягають великі <br class="sm:hidden">
+                                страждання. Втім, тут дуже
+                                легко і
+                                просто провести <br class="sm:hidden"> відмінності,
+                                тому що, коли ми вільні і нам надана повна <br class="sm:hidden"> можливість вибору
+                                бажаного.
+                            </p>
+                            <p class="text-[#999999] uppercase relative top-14 xll:hidden">
+                                Але при деяких обставинах – <br> або на вимогу боргу, або в <br class="sm:hidden"> силу
+                                якоїсь
+                                необхідності
+                                <br>
+                                часто доводиться.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="w-[51.875%] xll:min-w-full xll:mt-20 xll:hidden" src="images/project-4.jpg" alt="">
+                </div>
+
+                <div class="absolute top-[60%] right-4 xll:hidden">
+                    <img src="images/slider-model.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="pt-20 sm:pt-11 mediumScreen:pb-[80px] smDevice:pb-0">
+            <div class="wrapper">
+                <h3
+                    class="relative after:w-7 after:h-[.1875rem] after:bg-[#B6D7E8] after:block after:absolute after:top-3 after:-left-10 text-lg uppercase lg:mb-4 sm:text-lg">
+                    Опис проекта</h3>
+                <div class="flex items-center h-[361px] mediumScreen:flex-wrap lg:h-full">
+                    <div class="flex gap-28 largeScreen:justify-between mediumScreen:w-full sm:flex-col sm:gap-11">
+                        <div class="text-secondary">
+                            <p class="text-justify text-sm block veryLg:leading-[17px]">
+                                Якщо скористатися найпростішим прикладом, то хто з нас став <br class="sm:hidden"> би
+                                займатися якими б то
+                                не
+                                було
+                                тяжкими фізичними вправами, <br class="sm:hidden">
+                                якщо б це не приносило з собою якоїсь користі? І хто міг би по <br class="sm:hidden">
+                                справедливості
+                                дорікнути
+                                прагнення до насолоди, яке не
+                                несло <br class="sm:hidden"> б з собою ніяких неприємностей, або того, хто уникав би
+                                такого <br class="sm:hidden">
+                                страждання,
+                                яке
+                                не приносило. <br class="sm:hidden">
+                                <br>
+                                <br>
+                                Дійсно, ніхто не відкидає, не зневажає, не уникає насолод тільки <br class="sm:hidden">
+                                через те, що це
+                                насолоди,
+                                але лише через те, що тих,
+                                хто не вміє <br class="sm:hidden"> розумно вдаватися насолоді, осягають великі
+                                страждання.
+                            </p>
+                        </div>
+                        <div class="min-w-[15.625rem] veryLg:mr-4 veryLg:grid">
+                            <div class="flex items-center justify-between mb-4 ">
+                                <span class="block  font-light text-secondary">Країна:</span>
+                                <span class="block text-secondary text-sm font-normal">Україна</span>
+                            </div>
+                            <div class="flex items-center justify-between  mb-4 ">
+                                <span class="block font-light text-secondary">Місто:</span>
+                                <span class="block text-secondary text-sm font-normal">Львів</span>
+                            </div>
+                            <div class="flex items-center justify-between  mb-4 ">
+                                <span class="block font-light text-secondary">Вулиця:</span>
+                                <span class="block text-secondary text-sm font-normal">Незалежності</span>
+                            </div>
+                            <div class="flex items-center justify-between  mb-4 ">
+                                <span class="block font-light text-secondary">К-сть поверхів:</span>
+                                <span class="block text-secondary text-sm font-normal">15</span>
+                            </div>
+                            <div class="flex items-center justify-between  mb-4 ">
+                                <span class="block font-light text-secondary">Час роботи:</span>
+                                <span class="block text-secondary text-sm font-normal">23 міс.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="pointer font-normal uppercase sm:min-w-full whitespace-nowrap text-xs hidden sm:block mediumScreen:relative smDevice:-top-[20px] lg:top-0 mediumScreen:-top-[190px] text-secondary min-w-[21.0625rem] h-12 mt-9 py-1 px-[4.125rem]  border border-third mb-4 duration-200 hover:bg-secondary hover:text-primary ease-in-out"
+                        type="submit">Розрахувати подібний проект
+                    </button>
+                    <img class="min-w-[108%] relative -left-3 hidden sm:block" src="images/project-4.jpg" alt="">
+                    <div
+                        class="grid grid-cols-2 sm:min-w-[108%] sm:relative sm:-left-3 lg:py-20 sm:grid-cols-1 sm:pl-5 sm:place-items-start sm:py-12 bg-secondary w-[51.875%] ml-auto h-full place-content-center place-items-center mediumScreen:min-w-full mediumScreen:mt-[4rem]">
+                        <div class="flex gap-5 mb-5 z-20 sm:mb-10">
+                            <span class="block text-third font-normal text-lg">01</span>
+                            <div class="flex flex-col">
+                                <span class="block text-lg font-medium mb-3 text-primary">Будівельна експертиза</span>
+                                <p class="font-light text-[#EDEDED] text-[.8125rem]">
+                                    Всі рішення проекту можна реалізувати технічно, для <br>
+                                    цього ми завжди консультуємося з досвідченими <br> фахівцями в процесі
+                                    створення дизайн-проекту
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 mb-5 z-20 sm:mb-10">
+                            <span class="block text-third font-normal text-lg">02</span>
+                            <div class="flex flex-col">
+                                <span class="block text-lg font-medium mb-3 text-primary">Реальні матеріали і
+                                    меблі</span>
+                                <p class="font-light text-[#EDEDED] text-[.8125rem]">
+                                    У специфікації проекту ми вказуємо всі матеріали і <br> меблі, із зазначенням
+                                    артикулів і посилань на <br> організації, де їх
+                                    можна придбати
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 mb-5 z-20 sm:mb-10">
+                            <span class="block text-third font-normal text-lg text-primary">03</span>
+                            <div class="flex flex-col">
+                                <span class="block text-lg font-medium mb-3 text-primary">Гарантії термінів і
+                                    зобов'язання</span>
+                                <p class="font-light text-[#EDEDED] text-[.8125rem]">
+                                    Перед початком робіт ми завжди підписуємо <br> офіційний договір, який дає гарантії
+                                    для
+                                    наших <br> замовників, що робота буде
+                                    виконана точно термін і <br> без помилок
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 mb-5 z-20">
+                            <span class="block text-third font-normal text-lg text-primary">04</span>
+                            <div class="flex flex-col">
+                                <span class="block text-lg font-medium mb-3 text-primary">Реальні та позитивні
+                                    відгуки</span>
+                                <p class="font-light text-[#EDEDED] text-[.8125rem]">
+                                    Так само як немає нікого, хто полюбивши, вважав <br> за краще і зажадав би саме
+                                    страждання тільки за те, <br> що це страждання, а
+                                    не тому,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="pointe sm:hidden uppercase text-sm mediumScreen:relative smDevice:-top-[20px] lg:top-0 mediumScreen:-top-[190px] text-secondary  h-12 mt-9 py-1 px-16  border border-third mb-4 duration-200 hover:bg-secondary hover:text-primary ease-in-out"
+                    type="submit">Розрахувати подібний проект
+                </button>
+            </div>
+        </section>
+        <section class="pt-20 xxxl:hidden">
+            <div class="wrapper">
+                <h4
+                    class="relative after:w-7 after:h-[.1875rem] after:bg-[#B6D7E8] after:block after:absolute after:top-3 after:-left-10 text-lg uppercase">
+                    Планіровка
+                </h4>
+
+                <div class="flex items-center gap-3 font-normal mb-5 mt-10">
+                    <span class="block font-medium">Поверх</span>
+                    <button class="text-secondary w-6 h-6 bg-primary cursor-pointer" type="submit">1</button>
+                    <button class="text-primary w-6 h-6 bg-secondary cursor-pointer" type="submit">2</button>
+                    <button class="text-primary w-6 h-6 bg-secondary cursor-pointer" type="submit">3</button>
+                    <button class="text-primary w-6 h-6 bg-secondary cursor-pointer" type="submit">4</button>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex gap-[5.375rem]">
+                        <div>
+                            <div
+                                class="flex justify-between w-[21.6875rem] h-12 border border-[#ECECEC] py-4 px-5 mb-2">
+                                <span class="block">Гараж</span>
+                                <span class="block">24 м <sup>2</sup></span>
+                            </div>
+                            <div
+                                class="flex justify-between w-[21.6875rem] h-12 border border-[#ECECEC] py-4 px-5 mb-2">
+                                <span class="block">Кухня</span>
+                                <span class="block">54 м <sup>2</sup></span>
+                            </div>
+                            <div
+                                class="flex justify-between w-[21.6875rem] h-12 border border-[#ECECEC] py-4 px-5 mb-2">
+                                <span class="block">Ванна</span>
+                                <span class="block">14 м <sup>2</sup></span>
+                            </div>
+                            <div
+                                class="flex justify-between w-[21.6875rem] h-12 border border-[#ECECEC] py-4 px-5 mb-2">
+                                <span class="block">Туалет</span>
+                                <span class="block">10 м <sup>2</sup></span>
+                            </div>
+                        </div>
+                        <img src="images/design-room.png" alt="">
+                    </div>
+                    <img class="min-w-[930px]" src="images/building.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section
+            class="bg-[#F9F9F9] h-[281px] mediumScreen:py-40 mediumScreen:bg-primary lg:w-auto xll:h-auto xll:py-0">
+            <div class="wrapper">
+                <h5
+                    class="smDevice:after:w-6 smDevice:after:h-[3px] smDevice:after:bg-third smDevice:after:block smDevice:after:absolute text-secondary relative smDevice:after:top-24 smDevice:after:-left-8 uppercase text-xl mb-11 pt-20 smDevice:left-[10rem] smDevice:after:left-[3rem] smDevice:after:top-[7rem] smDevice:after:w-[7.25rem] smDevice:left-[20%] smDevice::-translate-x-1/2 ">
+                    Зв’язатися з нами
+                </h5>
+                <div class="flex gap-[20rem] xl:grid xl:grid-cols-2 xll:grid-cols-1 xll:gap-11">
+                    <div class="flex items-start gap-36 xll:justify-between sm:flex-col sm:gap-11">
+                        <p class="text-justify text-xs">
+                            І ми відповімо на любе питання яке вас цікавить. <br> Дійсно, ніхто не відкидає, не <br>
+                            зневажає, не
+                            уникає насолод тільки через
+                            те.
+                        </p>
+                        <div class="flex gap-6 sm:ml-auto">
+                            <img class="object-contain" src="images/instagram.png" alt="">
+                            <img class="object-contain" src="images/twitter.png" alt="">
+                            <img class="object-contain" src="images/facebook.png" alt="">
+                        </div>
+                    </div>
+                    <form
+                        class="relative border border-[#ECECEC] min-w-[24.4375rem] h-14 flex items-center sm:pl-4 pl-7 font-normal sm:min-w-[305px]">
+                        <input class="text-lg text-secondary block opacity-100" type="text"
+                            placeholder="Що вас цікавить?">
+                        <button
+                            class="bg-third uppercase text-sm w-36 h-14 absolute -right-[9.0625rem] mediumScreen:right-0 xll:text-[0px] xll:w-[3.625rem] xll:h-[3.625rem]"
+                            type="submit">ВІДПРАВИТИ <img class="hidden xll:block mx-auto -mt-[13px]"
+                                src="images/arrow-left.svg" alt=""> </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="pb-20 relative text-primary mediumScreen:pt-[200px] smDevice:pt-[60px]">
+            <div class="wrapper p-0 max-w-[120rem]">
+                <h5
+                    class="absolute after:w-6 after:h-[.0938rem] after:bg-third after:block after:absolute after:top-24 after:-left-8 uppercase text-xl mb-11 pt-20 left-[10rem] sm:after:left-[4rem] sm:after:top-[7.5rem] sm:after:w-[7.25rem] sm:left-[50%] sm:-translate-x-1/2  sm:whitespace-nowrap">
+                    Калькулятор проекта
+                </h5>
+                <div
+                    class="flex gap-20 py-[4.6875rem] items-center xll:block bg-cover h-full bg-no-repeat bg-[url('images/calculator-1.png')] xll:bg-none xll:bg-secondary  font-normal pl-16 largeScreen:px-2 largeScreen:py-20 xll:px-5">
+                    <div>
+                        <div class="grid grid-cols-2 text-lg mt-16 gap-y-10 gap-x-20 largemd:gap-x-7 xll:grid-cols-1">
+                            <select
+                                class="min-w-[22rem] h-12 border border-third text-primary px-9  relative xll:w-full bg-[url('images/arrow.png')] bg-no-repeat appearance-none bg-right bg-top-9 pr-20  xll:min-w-full">
+                                <option>Країна</option>
+                            </select>
+
+                            <select
+                                class="min-w-[22rem] h-12 border border-third  px-9 xll:w-full relative xll:w-full bg-[url('images/arrow.png')] bg-no-repeat appearance-none bg-right bg-top-9 pr-20 xll:min-w-full">
+                                <option>Місто</option>
+                            </select>
+                            <select
+                                class="min-w-[22rem] h-12 border border-third  px-9 xll:w-full relative xll:w-full bg-[url('images/arrow.png')] bg-no-repeat appearance-none bg-right bg-top-9 pr-20 xll:min-w-full">
+                                <option>Стиль</option>
+                            </select>
+                            <select
+                                class="min-w-[22rem] h-12 border-2 border-third xl:mb-12 px-9 xll:w-full xll:w-full bg-[url('images/arrow.png')] bg-no-repeat appearance-none bg-right bg-top-9 pr-20  xll:min-w-full">
+                                <option>Зона розміщення</option>
+                            </select>
+                        </div>
+                        <div
+                            class="flex justify-between items-end mt-12 max-w-[34.75rem] xll:flex-col xll:max-w-full xll:items-start xll:hidden">
+                            <button
+                                class="min-w-[22rem] h-12 bg-third text-secondary text-sm uppercase duration-300 ease-out hover:text-primary hover:bg-secondary xll:min-w-full"
+                                type="submit">Розрахувати вартість</button>
+                            <span
+                                class="block relative after:bg-third after:block after:relative after:top-0 after:-left-0 after:h-[.0625rem] xll:mt-[1.5625rem]">Скинути
+                                фільтир</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between font-normal flex-col">
+                        <div>
+                            <input
+                                class="appearance-none bg-third min-w-[30.625rem] h-1 accent-primary largeScreen:min-w-[20.3125rem] xll:min-w-full xll:h-[2px]"
+                                type="range">
+                            <div class="flex justify-between mt-1">
+                                <div class="flex gap-16">
+                                    <span class="block">10</span>
+                                    <span class="block">43</span>
+                                </div>
+                                <span class="block">160</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block mb-4 mt-7 text-sm">Час здачі (міс.)</span>
+                            <input
+                                class="appearance-none bg-third min-w-[30.625rem] h-1 accent-primary largeScreen:min-w-[20.3125rem] xll:min-w-full xll:h-[2px]"
+                                type="range">
+                            <div class="flex justify-between mt-1">
+                                <div class="flex gap-[13rem]">
+                                    <span class="block">10</span>
+                                    <span class="block">43</span>
+                                </div>
+                                <span class="block">60</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex justify-between items-end mt-12 max-w-[34.75rem] xll:flex-col xll:max-w-full xll:items-start bigScreen:hidden xll:flex">
+                            <button
+                                class="min-w-[22rem] h-12 bg-third text-secondary text-sm uppercase duration-300 ease-out hover:text-primary hover:bg-secondary xll:min-w-full"
+                                type="submit">Розрахувати вартість</button>
+                            <span
+                                class="block relative after:bg-third after:block after:relative after:top-0 after:-left-0 after:h-[.0625rem] xll:mt-[1.5625rem]">Скинути
+                                фільтир</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-36 pb-20 largeScreen:pt-0">
+            <div class="wrapper">
+                <h6
+                    class="relative text-secondary  bigScreen:after:w-7 bigScreen:after:h-[.1875rem] bigScreen:after:bg-[#B6D7E8] bigScreen:after:block bigScreen:after:absolute bigScreen:after:top-[5.75rem] bigScreen:after:-left-10 text-xl uppercase mb-8 after:w-6 after:h-[.0938rem] after:bg-third after:block after:absolute after:top-24 after:-left-8  pt-20 smDevice:after:left-[2rem] smDevice:after:top-[7.5rem] smDevice:after:w-[7.25rem] smDevice:left-[74%] smDevice:-translate-x-1/2">
+                Схожі проекти
+                </h6>
+                <div class="flex gap-16 largeScreen:grid  largeScreen:grid-cols-2 tablet:grid-cols-1">
+                    <img class="largeScreen:w-[100%] tablet:mx-auto" src="images/building-1.png" alt="">
+                    <img class="largeScreen:w-[100%] tablet:hidden" src="images/building-2.png" alt="">
+                    <img class="largeScreen:w-[100%] tablet:hidden" src="images/building-3.png" alt="">
+                    <img class="largeScreen:w-[100%] tablet:hidden" src="images/building-4.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary py-20 xll:pb-[3.75rem] xll:pt-[6.25rem]">
+        <div class="wrapper">
+            <div class="flex items-center justify-between xll:grid xll:grid-cols-2 xll:items-start">
+                <h1 class="text-2xl uppercase text-primary cursor-pointer xll:-order-1 xll:text-[1.625rem]">EADAS</h1>
+                <nav class="text-[#999999] flex items-center">
+                    <ul class="flex items-center gap-8 xll:flex-col xll:text-sm sm:font-normal xll:items-start">
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out" href="#">ГОЛОВНА</a>
+                        </li>
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out"
+                                href="projects.html">ПРОЕКТИ</a>
+                        </li>
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out" href="#">НАГОРОДИ</a>
+                        </li>
+                        <li><a class=" hover:text-primary duration-500 transition-all ease-in-out"
+                                href="contacts.html">КОНТАКТИ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div
+                    class="flex items-center gap-14 text-[.75rem] font-normal text-[#696969] uppercase xll:-order-1 xll:flex-col xll:gap-[1.375rem] xll:items-end xll:relative xll:top-[1.875rem]">
+                    <a class=" hover:text-primary  duration-500 transition-all  ease-in-out xll:order-4"
+                        href="#">instagram</a>
+                    <a class=" hover:text-primary  duration-500 transition-all ease-in-out xll:order-2"
+                        href="#">FACEBOOK</a>
+                    <a class="hover:text-primary  duration-500 transition-all ease-in-out xll:-order-1"
+                        href="#">TWITTER</a>
+                </div>
+                <div class="flex flex-col text-[#696969] xll:self-end xll:items-end">
+                    <div class=" flex mb-3 items-center xll:mb-[25px]">
+                        <img class="w-3 h-3 relative right-4" src="images/phone.png" alt="">
+                        <a class="hover:text-primary  duration-500 transition-all  ease-in-out sm:text-xs xll:font-black"
+                            href="tel:+38 (097) 567 - 44 - 26">+38 (097) 567 - 44 - 26</a>
+                    </div>
+                    <div class="flex items-center text-[#696969] xll:self-end">
+                        <img class="w-3 h-3 relative right-4 items-center" src="images/phone.png" alt="">
+                        <a class="hover:text-primary  duration-500 transition-all  ease-in-out sm:text-xs xll:font-black"
+                            href="tel:+38 (067) 567 - 44 - 86">+38 (067) 567 - 44 - 86</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="src/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="src/main.min.js"></script>
+</body>
+
+</html>

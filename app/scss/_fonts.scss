@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Futura Cyrillic";
+    src: url("../fonts/FuturaCyrillicMedium.woff2") format("woff2"),
+        url("../fonts/FuturaCyrillicMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Cyrillic";
+    src: url("../fonts/FuturaCyrillicLight.woff2") format("woff2"),
+        url("../fonts/FuturaCyrillicLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Cyrillic Book";
+    src: url("../fonts/FuturaCyrillicBook.woff2") format("woff2"),
+        url("../fonts/FuturaCyrillicBook.woff") format("woff");
+    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Cyrillic";
+    src: url("../fonts/FuturaCyrillic-Bold.woff2") format("woff2"),
+        url("../fonts/FuturaCyrillic-Bold.woff") format("woff");
+    font-weight: 700;
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
